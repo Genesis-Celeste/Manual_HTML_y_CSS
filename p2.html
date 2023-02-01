@@ -1,0 +1,60 @@
+<html lang="español">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/Repositorio_Guia/Estilos/Estilo2.css">
+    <link rel="shortcut icon" href="/Recursos_Imagenes/html.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia CSS</title>
+</head>
+<body>
+    <header>
+        <b>CSS</b>
+    </header>
+
+    <aside>
+        <nav class="menu">
+            <ul>
+                <li class="ophtml"><b><a href="#" onclick="mostrar(1);">width</a></b></li>
+                <li class="ophtml"><b><a href="#" onclick="mostrar(2);">margin</a></b></li>
+                <li class="ophtml"><b><a href="#" onclick="mostrar(3);">padding</a></b></li>
+            </ul>
+        </nav>
+    </aside>
+    
+
+    <section id="maincontent">
+        <div>
+            <span>Descripcion</span>
+                <article id="i1"><h3>WIDTH</h3> Especifica la anchura del area de contenido de un elemento. De forma predeterminada, establece el ancho del área de contenido,
+                </article>
+                <article id="i2"><h3>MARGIN</h3>Establece el margen para los cuatro lados. Es una abreviación para evitar tener que establecer cada lado por separado con las otras propiedades de margen
+                </article>
+                <article id="i3"><h3>PADDING</h3>Establece el área de relleno en los cuatro lados de un elemento a la vez.
+                </article>
+        </div>
+    </section>
+    
+
+    <div class="botonHome">
+        <nav>
+            <ul>
+                <li class="hipColor"><a class="hipColor" href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+<script>
+    function mostrar(id){
+        for(var i = 1; i <= 5; i++){
+            if(id == i){
+                document.getElementById("i"+id).style.display = "block";
+            }else{
+                document.getElementById("i"+i).style.display = "none";
+            }
+        }
+    }
+</script>
+
+</html>

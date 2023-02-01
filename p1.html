@@ -1,0 +1,73 @@
+<html lang="español">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/Repositorio_Guia/Estilos/Estilo2.css">
+    <link rel="shortcut icon" href="/Recursos_Imagenes/html.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia HTML</title>
+</head>
+<body>
+    <header>
+        <b>HTML</b>
+    </header>
+
+    <aside>
+        <nav class="menu">
+            <ul>
+                <li class="ophtml"><b><a href="#" onclick="mostrar(1);">input</a></b></li>
+                <li class="ophtml"><b><a href="#" onclick="mostrar(2);">div</a></b></li>
+                <li class="ophtml"><b><a href="#" onclick="mostrar(3);">p</a></b></li>
+                <li class="ophtml"><b><a href="#" onclick="mostrar(4);">img</a></b></li>
+            </ul>
+        </nav>
+    </aside>
+    
+
+    <section id="maincontent">
+        <div>
+            <span>Descripcion</span>
+                <article id="i1"><h3>INPUT</h3>Se usa para crear controles interactivos para formularios basados en la web con el fin de recibir datos del usuario. 
+                    Hay disponible una amplia variedad de 
+                    tipos de datos de entrada y widgets de control, que dependen del dispositivo y el agente de usuario
+                </article>
+                <article id="i2"><h3>DIV</h3>Sirve para crear secciones o agrupar contenidos.    
+                    Está definido como: Elemento en bloque.
+                    Crea una caja: En bloque.
+                    Puede contener: Texto, y/o cero o más elementos en bloque o en linea.
+                </article>
+                <article id="i3"><h3>P</h3>Apropiado para distribuir el texto en párrafos.                    
+                    Crea una caja: en bloque.
+                    Está definido como: Elemento de frase.
+                    Puede contener: cero o más elementos en linea
+                </article>
+                <article id="i4"><h3>IMG</h3>Representa una imagen en el documento.
+                    Los navegadores no siempre muestran la imagen a la que el elemento hace referencia. 
+                    Es el caso de los navegadores no gráficos
+                </article>
+        </div>
+    </section>
+    
+
+    <div class="botonHome">
+        <nav>
+            <ul>
+                <li class="hipColor"><a class="hipColor" href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+<script>
+    function mostrar(id){
+        for(var i = 1; i <= 5; i++){
+            if(id == i){
+                document.getElementById("i"+id).style.display = "block";
+            }else{
+                document.getElementById("i"+i).style.display = "none";
+            }
+        }
+    }
+</script>
+
+</html>
